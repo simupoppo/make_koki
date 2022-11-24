@@ -42,13 +42,17 @@ If you use only python file, only the dat file is made. Please make pak by using
 ・同梱物
 
 src
- koki_a.png
- koki_b.png
- koki_c.png
- koki_d.png
+
+ koki_a.png/
+ koki_b.png/
+ koki_c.png/
+ koki_d.png/
  koki_e.png
+ 
 make_koki.py (プログラム。python環境で起動します。) 
+
 make_koki_ja.py (日本語版プログラム。python環境で起動します。UTF-8で記述。ja_kokiXXX.tabも作成します(kokiXXXは車両名)。)
+
 make_koki.bat (windows環境で起動します。SHIFT-JIS)
 
 ・使用方法
