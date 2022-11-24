@@ -28,7 +28,7 @@ If you want to use in pak128, please change container figures and some parameter
 1. Input "make_koki.bat" in terminal.
 2. After choosing the language, input the car_name, copyright, length, container-loading number(not available), top speed, cost of the car, running cost of the car,weight of the car, intro_year, retire_year,and container-loading length (top and end).
 
-If you use only python file, only the dat file is made. Please make pak by using makeobj.
+If you use only python file, only the dat file is made. Please make pak files yourself by using makeobj.
 
 
 
