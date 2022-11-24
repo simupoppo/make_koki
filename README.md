@@ -12,6 +12,7 @@ If you want to use in pak128, please change container figures and some parameter
   - koki_c.png   
   - koki_d.png   
   - koki_e.png  
+- input.txt (input parameters. If you want to skip writting in terminal, please use it.)  
 - make_koki.py (python program)  
 - make_koki_ja.py (python program for japanese. UTF-8)  
 - make_koki.bat (for windows. SHIFT-JIS.)
@@ -30,7 +31,7 @@ If you want to use in pak128, please change container figures and some parameter
 
 If you use only python file, only the dat file is made. Please make pak files yourself by using makeobj.
 
-
+You can skip input phase by using "input.txt". Please write input.txt before usinig program and answer the car_name by "isfile" while running program. 
 
 
 # make_koki_japanese
@@ -48,6 +49,7 @@ If you use only python file, only the dat file is made. Please make pak files yo
   - koki_c.png   
   - koki_d.png   
   - koki_e.png  
+- input.txt (プログラムのパラメータが記入されています。コマンドプロンプトでの入力を省略できます。)  
 - make_koki.py (プログラム。python環境で起動します。)   
 - make_koki_ja.py (日本語版プログラム。python環境で起動します。UTF-8で記述。ja_kokiXXX.tabも作成します(kokiXXXは車両名)。)  
 - make_koki.bat (windows環境で起動します。SHIFT-JIS)
@@ -72,7 +74,7 @@ If you use only python file, only the dat file is made. Please make pak files yo
 以上の入力完了後、datファイルが出力されます。
 
 
-なお、コマンドプロンプトでの入力が面倒な場合、同梱のinput.txtに上記の内容を上から順に各行に入力することでdat化(バッチファイルからの場合pak化)を自動化できます。
+なお、コマンドプロンプトでの入力が面倒な場合、同梱のinput.txtに上記の内容を上から順に各行に入力することでdat化(バッチファイルからの場合pak化)を自動化できます。貨車名を聞かれた際に"isfile"と入力してください。input.txtの内容に従って自動でdatが記述されます(日本語版の場合は日本語のみコマンドプロンプト,ターミナル上で入力する必要があります)。
 
 ## 謝辞/Special thanks
 
