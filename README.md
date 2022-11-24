@@ -19,8 +19,8 @@ If you want to use in pak128, please change container figures and some parameter
 ## How to use
 
 ### Before use
-0-1. Put the container track vehicle empty image in the same directory as the programs.
-0-2. Installing python.
+0-1. Put the container track vehicle empty image in the same directory as the programs.  
+0-2. Installing python.  
 0-3. If you put Makeobj in the same directory, you can make not only dat file but also pak file by using "make_koki.bat". 
 
 ### Use
