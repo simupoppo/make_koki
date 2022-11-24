@@ -49,7 +49,7 @@ You can skip input phase by using "input.txt". Please write input.txt before usi
   - koki_c.png   
   - koki_d.png   
   - koki_e.png  
-- input.txt (プログラムのパラメータが記入されています。コマンドプロンプトでの入力を省略できます。)  
+- input.txt (プログラムのパラメータが記入されています。コマンドプロンプトでの入力を省略できます。コマンドプロンプトを使用しない場合は不要です。)  
 - make_koki.py (プログラム。python環境で起動します。)   
 - make_koki_ja.py (日本語版プログラム。python環境で起動します。UTF-8で記述。ja_kokiXXX.tabも作成します(kokiXXXは車両名)。)  
 - make_koki.bat (windows環境で起動します。SHIFT-JIS)
