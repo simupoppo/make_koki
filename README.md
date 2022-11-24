@@ -2,6 +2,7 @@
 ## 〇 Flexible loading position set.
 This programs make you to load container flexibly.
 This programs for making pak128.japan addon only! (Not for pak128!).
+If you want to use in pak128, please change container figures and some parameters in the program.
 
 ## ・contents
 
