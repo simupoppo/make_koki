@@ -1,10 +1,10 @@
 # make_koki
-## 〇 Flexible loading position set.
+## Flexible loading position set.
 This programs make you to load container flexibly.
 This programs for making pak128.japan addon only! (Not for pak128!).
 If you want to use in pak128, please change container figures and some parameters in the program.
 
-## ・contents
+## contents
 
 - src  
   - koki_a.png  
@@ -16,7 +16,7 @@ If you want to use in pak128, please change container figures and some parameter
 - make_koki_ja.py (python program for japanese. UTF-8)  
 - make_koki.bat (for windows. SHIFT-JIS.)
 
-## ・How to use
+## How to use
 
 ### Before use
 0-1. Put the container track vehicle empty image in the same directory as the programs.
@@ -35,12 +35,12 @@ If you use only python file, only the dat file is made. Please make pak by using
 
 # make_koki_japanese
 
-## 〇コンテナ自由積載セット
+## コンテナ自由積載セット
 
 本フォルダはコンテナを自由自在に編成内で積み替えられるpakの作成を支援します。
 注意:ここで使用している画像はpak128.japan専用です。pak128等ほかのサイズで使用する場合は画像をご用意いただき、適宜差し替えてください。
 
-## ・同梱物
+## 同梱物
 
 - src  
   - koki_a.png  
@@ -52,7 +52,7 @@ If you use only python file, only the dat file is made. Please make pak by using
 - make_koki_ja.py (日本語版プログラム。python環境で起動します。UTF-8で記述。ja_kokiXXX.tabも作成します(kokiXXXは車両名)。)  
 - make_koki.bat (windows環境で起動します。SHIFT-JIS)
 
-## ・使用方法
+## 使用方法
 
 本ファイルと同じディレクトリに空のコンテナ貨車の画像とmakeobjをご用意ください。
 起動にはpython環境が必要ですので、インストールしてください。python3.11で起動確認済みです。
@@ -74,13 +74,13 @@ If you use only python file, only the dat file is made. Please make pak by using
 
 なお、コマンドプロンプトでの入力が面倒な場合、同梱のinput.txtに上記の内容を上から順に各行に入力することでdat化(バッチファイルからの場合pak化)を自動化できます。
 
-## ・謝辞
+## 謝辞/Special thanks
 
 pak化に用いた画像は大ぼけ様のコキ100系のコンテナをもとに作成しております。
 この場を借りてお礼申し上げます。
 
 
-## ・改造/再配布について
+## 改造,再配布について
 
 画像については改造が可能となっております。
 プログラムにつきましてはご自由に改造/再配布してください。
@@ -89,3 +89,4 @@ pak化に用いた画像は大ぼけ様のコキ100系のコンテナをもと�
 
 2022.11.14 ver 0.0 作成:コンテナ数指定に未対応、input.txt入力での動作を確認済み  
 2022.11.23 ver 0.1 コンテナの積む範囲の指定に対応、車掌室のついた貨車(コキフ)に対応可能、日本語化対応(自動ja.tab生成機能付き)
+2022.11.24 ver 0.1 公開
