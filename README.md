@@ -22,13 +22,15 @@ If you want to use in pak128, please change container figures and some parameter
 ## How to use
 
 ### Before use
-0-1. Put the container track vehicle empty image in the same directory as the programs.  
+0-1. Put the container track vehicle empty image in the same directory as the programs. Vehicle Empty Image must be drawn in First line (kokiXXX.0.n)! 
 0-2. If you put Makeobj in the same directory, you can make not only dat file but also pak file by using "make_koki.bat". 
 
 ### Use
 
 1. Input "make_koki.bat" in terminal.
-2. After choosing the language, input the car_name, copyright, length, container-loading number(not available), top speed, cost of the car, running cost of the car,weight of the car, intro_year, retire_year,and container-loading length (top and end).
+2. After choosing the language, input the car_name, copyright, imagefile-name, length, container-loading number(not available), top speed, cost of the car, running cost of the car,weight of the car, intro_year, retire_year,and container-loading length (top and end).
+
+Vehicle Empty Image must be drawn in First line (kokiXXX.0.n)!
 
 If you use only make_koki.exe, only the dat file is made. If you want to edit dat files, please do.
 
@@ -59,7 +61,7 @@ You can skip input phase by using "input.txt". Please write input.txt before usi
 
 ## 使用方法
 
-本ファイルと同じディレクトリに空のコンテナ貨車の画像とmakeobjをご用意ください。
+本ファイルと同じディレクトリに空のコンテナ貨車の画像とmakeobjをご用意ください。貨車の画像は必ずpngファイルの1行目に配置してください!
 起動にはpython環境が必要ですので、インストールしてください。python3.11で起動確認済みです。
 また、pythonファイルは単独でご使用いただけますが、同封しているバッチファイルをご使用いただける場合pak化まで自動で行われます。Windows 11 Home Edditionで起動確認済みです。
 
