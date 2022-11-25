@@ -2,7 +2,7 @@
 ## Flexible container loading position set
 This programs make you to load container flexibly.
 This programs for making pak128.japan addon only! (Not for pak128!).
-If you want to use in pak128, please change container figures and some parameters in the program.
+If you want to use in pak128, please change container figures and some parameters in the program such as freight and top/end length.
 
 ## contents
 
@@ -39,7 +39,7 @@ You can skip input phase by using "input.txt". Please write input.txt before usi
 ## コンテナ自由積載セット
 
 本フォルダはコンテナを自由自在に編成内で積み替えられるpakの作成を支援します。
-注意:ここで使用している画像はpak128.japan専用です。pak128等ほかのサイズで使用する場合は画像をご用意いただき、適宜差し替えてください。
+注意:ここで使用している画像はpak128.japan専用です。pak128等ほかのサイズで使用する場合は画像をご用意いただき、適宜差し替えてください。また、連結位置や貨物の種類についても変更する必要があります。
 
 ## 同梱物
 
