@@ -202,12 +202,15 @@ else:
     top_length=float(input())
     print("From which length do you end loading containers? Pleast input float.")  
     end_length=float(input())
-    if end_length<koki_length:
-        end_length=end_length
-    else:
-        end_length=koki_length
 filename=koki_name+".dat"
 output_dat=open(filename,"w")
+if 0<=top_length and top_length<=end_length and end_length<=koki_length:
+    end_length=end_length
+    top_length=top_length
+else:
+    print("top_length and end_length input were wrong!")
+    top_length=0
+    end_length=koki_length
 
 
 

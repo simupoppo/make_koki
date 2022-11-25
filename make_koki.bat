@@ -7,9 +7,9 @@ ECHO +-----------------------------------------------------+
 SET /P INPUT_STR=
 
 if %INPUT_STR%==0 (
-    python make_koki_ja.py
+    make_koki_ja.exe
 ) else (
-    python make_koki.py
+    make_koki.exe
 )
 for /f "tokens=1* delims==" %%a in (output.txt) do (
     set %%a=%%b

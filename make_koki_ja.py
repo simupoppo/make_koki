@@ -221,6 +221,13 @@ else:
 
 print("貨車の日本語名を入れてください。")
 koki_name_ja=input()
+if 0<=top_length and top_length<=end_length and end_length<=koki_length:
+    end_length=end_length
+    top_length=top_length
+else:
+    print("コンテナの積載位置が不正確です。車両全体に積載できます。")
+    top_length=0
+    end_length=koki_length
 filename=koki_name+".dat"
 output_dat=open(filename,"w")
 
