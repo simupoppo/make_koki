@@ -154,6 +154,8 @@ if koki_name == "isfile":
     if (os.path.isfile(koki_image+".png")==False):
         print("NO SUCH FILE {0} ! PLEASE CHECK SPELLING!".format(koki_image))
         ispng="0"
+    else:
+        ispng="1"
     koki_length=int(lines[3])
     container_number=int(lines[4])
     topspeed=lines[5]
@@ -263,7 +265,7 @@ makekoki()
 output_dat.close()
 output=open("output.txt","w")
 output.write("pak="+koki_name+".pak\n")
-output.write("dat="+filename)
+output.write("dat="+filename+"\n")
 output.write("ispng="+ispng)
 output.close()
 print("Complete making dat files!")
