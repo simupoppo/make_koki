@@ -27,12 +27,12 @@ If you want to use in pak128, please change container figures and some parameter
 
 ### Use
 
-1. Input "make_koki.bat" in terminal.
+1. Input "make_koki.exe" in terminal.
 2. After choosing the language, input the car_name, copyright, imagefile-name, length, container-loading number(not available), top speed, cost of the car, running cost of the car,weight of the car, intro_year, retire_year,and container-loading length (top and end).
 
 Vehicle Empty Image must be drawn in First line (kokiXXX.0.n)!
 
-If you use only make_koki.exe, only the dat file is made. If you want to edit dat files, please do.
+If there are not makeobj.exe or the vehicle images, make_koki.exe does not order to make pakfiles automatically. 
 
 You can skip input phase by using "input.txt". Please write input.txt before usinig program and answer the car_name by "isfile" while running program. 
 
@@ -112,3 +112,4 @@ pak化に用いた画像は大ぼけ様のコキ100系のコンテナをもと�
 2022.11.25 ver 1.0 make_koki.exe, make_koki_ja.exe作成、python環境なしでも作成可能に  
 2022.12.15 wiki公開  
 2023.02.11 ver 1.1 自動でpak化されない問題を解消  
+2023.02.13 ver 1.2 exe file makes pakfiles automatically (see "How to use").  
