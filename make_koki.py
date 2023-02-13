@@ -53,6 +53,7 @@
 
 
 import os
+import subprocess as sbp
 
 def makekoki():
     for i in range(len(vehlist)):
@@ -216,49 +217,49 @@ else:
 
 
 
+def set_vehlist():
+    vehlist=[]
+    # setting container_list
+    # if you make other containers, please add below!
+    vehlist.append([koki_name,koki_image,"None","1",top_length,top_length,1])
+    vehlist.append([koki_name+"_back",koki_image,"None","1",end_length,end_length,2])
+    vehlist.append([koki_name+"_JRF_19D_1","src/koki_a.1.","cat2","100",0,2.4,0])
+    vehlist.append([koki_name+"_JRF_19D_2","src/koki_a.2.","cat2","100",2.4,4.8,0])
+    vehlist.append([koki_name+"_JRF_19D_3","src/koki_a.3.","cat2","100",4.8,7.2,0])
+    vehlist.append([koki_name+"_JRF_19D_4","src/koki_a.4.","cat2","100",7.2,9.6,0])
+    vehlist.append([koki_name+"_JRF_19D_5","src/koki_a.5.","cat2","100",9.6,12,0])
+    vehlist.append([koki_name+"_JRF_V19A_1","src/koki_e.1.","cat3","10",0,2.4,0])
+    vehlist.append([koki_name+"_JRF_V19A_2","src/koki_e.2.","cat3","10",2.4,4.8,0])
+    vehlist.append([koki_name+"_JRF_V19A_3","src/koki_e.3.","cat3","10",4.8,7.2,0])
+    vehlist.append([koki_name+"_JRF_V19A_4","src/koki_e.4.","cat3","10",7.2,9.6,0])
+    vehlist.append([koki_name+"_JRF_V19A_5","src/koki_e.5.","cat3","10",9.6,12,0])
+    vehlist.append([koki_name+"_JRF_UR19A-1_1","src/koki_d.1.","cat13","10",0,2.4,0])
+    vehlist.append([koki_name+"_JRF_UR19A-1_2","src/koki_d.2.","cat13","10",2.4,4.8,0])
+    vehlist.append([koki_name+"_JRF_UR19A-1_3","src/koki_d.3.","cat13","10",4.8,7.2,0])
+    vehlist.append([koki_name+"_JRF_UR19A-1_4","src/koki_d.4.","cat13","10",7.2,9.6,0])
+    vehlist.append([koki_name+"_JRF_UR19A-1_5","src/koki_d.5.","cat13","10",9.6,12,0])
+    vehlist.append([koki_name+"_JRF_UR19A-2_1","src/koki_c.1.","cat12","100",0,2.4,0])
+    vehlist.append([koki_name+"_JRF_UR19A-2_2","src/koki_c.2.","cat12","100",2.4,4.8,0])
+    vehlist.append([koki_name+"_JRF_UR19A-2_3","src/koki_c.3.","cat12","100",4.8,7.2,0])
+    vehlist.append([koki_name+"_JRF_UR19A-2_4","src/koki_c.4.","cat12","100",7.2,9.6,0])
+    vehlist.append([koki_name+"_JRF_UR19A-2_5","src/koki_c.5.","cat12","100",9.6,12,0])
+    vehlist.append([koki_name+"_JRF_UT20A_1","src/koki_b.0.","Chemicals0","40",0,4,0])
+    vehlist.append([koki_name+"_JRF_UT20A_2","src/koki_b.1.","Chemicals0","40",4,8,0])
+    vehlist.append([koki_name+"_JRF_UT20A_4","src/koki_b.2.","Chemicals0","40",8,12,0])
+    vehlist.append([koki_name+"_JRF_22T6_1","src/koki_b.3.","cat7","40",0,4,0])
+    vehlist.append([koki_name+"_JRF_22T6_2","src/koki_b.4.","cat7","40",4,8,0])
+    vehlist.append([koki_name+"_JRF_22T6_4","src/koki_b.5.","cat7","40",8,12,0])
+    vehlist.append([koki_name+"_JRF_30D_1","src/koki_e.6.","cat3","30",0,6,0])
+    vehlist.append([koki_name+"_JRF_30D_3","src/koki_e.8.","cat3","30",6,12,0])
+    vehlist.append([koki_name+"_JRF_U51A-1_1","src/koki_a.6.","cat8","40",0,6,0])
+    vehlist.append([koki_name+"_JRF_U51A-1_3","src/koki_a.8.","cat8","40",6,12,0])
+    vehlist.append([koki_name+"_JRF_U51A-2_1","src/koki_a.6.","cat6","350",0,6,0])
+    vehlist.append([koki_name+"_JRF_U51A-2_3","src/koki_a.8.","cat6","350",6,12,0])
+    vehlist.append([koki_name+"_JRF_UF42A_1","src/koki_c.6.","cat6","350",0,6,0])
+    vehlist.append([koki_name+"_JRF_UF42A_3","src/koki_c.8.","cat6","350",6,12,0])
+    return vehlist
 
-
-vehlist=[]
-# setting container_list
-# if you make other containers, please add below!
-vehlist.append([koki_name,koki_image,"None","1",top_length,top_length,1])
-vehlist.append([koki_name+"_back",koki_image,"None","1",end_length,end_length,2])
-vehlist.append([koki_name+"_JRF_19D_1","src/koki_a.1.","cat2","100",0,2.4,0])
-vehlist.append([koki_name+"_JRF_19D_2","src/koki_a.2.","cat2","100",2.4,4.8,0])
-vehlist.append([koki_name+"_JRF_19D_3","src/koki_a.3.","cat2","100",4.8,7.2,0])
-vehlist.append([koki_name+"_JRF_19D_4","src/koki_a.4.","cat2","100",7.2,9.6,0])
-vehlist.append([koki_name+"_JRF_19D_5","src/koki_a.5.","cat2","100",9.6,12,0])
-vehlist.append([koki_name+"_JRF_V19A_1","src/koki_e.1.","cat3","10",0,2.4,0])
-vehlist.append([koki_name+"_JRF_V19A_2","src/koki_e.2.","cat3","10",2.4,4.8,0])
-vehlist.append([koki_name+"_JRF_V19A_3","src/koki_e.3.","cat3","10",4.8,7.2,0])
-vehlist.append([koki_name+"_JRF_V19A_4","src/koki_e.4.","cat3","10",7.2,9.6,0])
-vehlist.append([koki_name+"_JRF_V19A_5","src/koki_e.5.","cat3","10",9.6,12,0])
-vehlist.append([koki_name+"_JRF_UR19A-1_1","src/koki_d.1.","cat13","10",0,2.4,0])
-vehlist.append([koki_name+"_JRF_UR19A-1_2","src/koki_d.2.","cat13","10",2.4,4.8,0])
-vehlist.append([koki_name+"_JRF_UR19A-1_3","src/koki_d.3.","cat13","10",4.8,7.2,0])
-vehlist.append([koki_name+"_JRF_UR19A-1_4","src/koki_d.4.","cat13","10",7.2,9.6,0])
-vehlist.append([koki_name+"_JRF_UR19A-1_5","src/koki_d.5.","cat13","10",9.6,12,0])
-vehlist.append([koki_name+"_JRF_UR19A-2_1","src/koki_c.1.","cat12","100",0,2.4,0])
-vehlist.append([koki_name+"_JRF_UR19A-2_2","src/koki_c.2.","cat12","100",2.4,4.8,0])
-vehlist.append([koki_name+"_JRF_UR19A-2_3","src/koki_c.3.","cat12","100",4.8,7.2,0])
-vehlist.append([koki_name+"_JRF_UR19A-2_4","src/koki_c.4.","cat12","100",7.2,9.6,0])
-vehlist.append([koki_name+"_JRF_UR19A-2_5","src/koki_c.5.","cat12","100",9.6,12,0])
-vehlist.append([koki_name+"_JRF_UT20A_1","src/koki_b.0.","Chemicals0","40",0,4,0])
-vehlist.append([koki_name+"_JRF_UT20A_2","src/koki_b.1.","Chemicals0","40",4,8,0])
-vehlist.append([koki_name+"_JRF_UT20A_4","src/koki_b.2.","Chemicals0","40",8,12,0])
-vehlist.append([koki_name+"_JRF_22T6_1","src/koki_b.3.","cat7","40",0,4,0])
-vehlist.append([koki_name+"_JRF_22T6_2","src/koki_b.4.","cat7","40",4,8,0])
-vehlist.append([koki_name+"_JRF_22T6_4","src/koki_b.5.","cat7","40",8,12,0])
-vehlist.append([koki_name+"_JRF_30D_1","src/koki_e.6.","cat3","30",0,6,0])
-vehlist.append([koki_name+"_JRF_30D_3","src/koki_e.8.","cat3","30",6,12,0])
-vehlist.append([koki_name+"_JRF_U51A-1_1","src/koki_a.6.","cat8","40",0,6,0])
-vehlist.append([koki_name+"_JRF_U51A-1_3","src/koki_a.8.","cat8","40",6,12,0])
-vehlist.append([koki_name+"_JRF_U51A-2_1","src/koki_a.6.","cat6","350",0,6,0])
-vehlist.append([koki_name+"_JRF_U51A-2_3","src/koki_a.8.","cat6","350",6,12,0])
-vehlist.append([koki_name+"_JRF_UF42A_1","src/koki_c.6.","cat6","350",0,6,0])
-vehlist.append([koki_name+"_JRF_UF42A_3","src/koki_c.8.","cat6","350",6,12,0])
-
-
+vehlist=set_vehlist()
 # writing dat file
 #close dat file and complete!
 makekoki()
@@ -269,3 +270,11 @@ output.write("dat="+filename+"\n")
 output.write("ispng="+ispng)
 output.close()
 print("Complete making dat files!")
+def makepakfile(address_of_makeobj,koki_name):
+    if (os.path.isfile(address_of_makeobj)==True) and ispng=="1":
+        runinfo=address_of_makeobj+r" pak128 "+koki_name+r".pak "+koki_name+r".dat"
+        sbp.run(runinfo)
+    else:
+        print("No makeobj")
+
+makepakfile(r"./makeobj.exe",koki_name)
